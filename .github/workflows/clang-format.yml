@@ -11,6 +11,7 @@ jobs:
   check:
     name: Check code formatting
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:                            
     - name: Checkout Sources for push event
       if: ${{ github.event_name == 'push' }}
